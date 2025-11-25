@@ -68,7 +68,7 @@ To run this project locally, please follow these steps. It is recommended to use
 
 ## Usage Guide
 
-This project is contained entirely within the `Time series forecast with XGB.ipynb` Jupyter Notebook. It is not a command-line application. To use it, simply run the cells in the notebook from top to bottom.
+This project is contained entirely within the `Time series forecast with main.ipynb` Jupyter Notebook. It is not a command-line application. To use it, simply run the cells in the notebook from top to bottom.
 
 The notebook is structured as follows:
 
@@ -110,7 +110,7 @@ Time-series-forecast-with-XGB/
 The project models the time-series forecasting problem as a standard regression task. Instead of using traditional time-series models (like ARIMA or SARIMA), we create features from the timestamp itself. This allows us to use powerful regression models like XGBoost, which can capture complex non-linear relationships between the time features and the target variable (energy consumption).
 
 ### Train/Test Split
-The data is split chronologically. All data before January 1, 2015, is used for training the model, and all data from that point onward is used for testing. This ensures that the model is evaluated on its ability to forecast "future" data it has not seen before.
+The data is split chronologically using TimeSeriesSplit. All data before January 1, 2015, is used for training the model, and all data from that point onward is used for testing. This ensures that the model is evaluated on its ability to forecast "future" data it has not seen before.
 
 ### XGBoost Configuration
 An `XGBRegressor` is used with `n_estimators=1000`. To find the optimal number of trees and prevent overfitting, `early_stopping_rounds=50` is employed. The model stops training if the validation loss (on a subset of the training data) does not improve for 50 consecutive rounds.
