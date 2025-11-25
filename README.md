@@ -1,8 +1,9 @@
 # Time Series Forecasting for Energy Consumption using XGBoost
 
+![One year Prediction chart](prediction.png)
 
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates a complete workflow for time-series forecasting using Python, Pandas, and XGBoost. The goal is to predict hourly energy consumption for the PJM East (PJME) region. The process covers everything from exploratory data analysis (EDA) and feature engineering to model training, evaluation, and visualization of the forecast.
 
