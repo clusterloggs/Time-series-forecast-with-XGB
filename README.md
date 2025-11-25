@@ -18,7 +18,7 @@ This project is useful for anyone interested in learning how to apply machine le
 
 ---
 
-## 📊 Dataset Description
+## Dataset Description
 
 The dataset used is `PJME_hourly.csv`, which is located in the root directory of this repository. It contains hourly energy consumption data for the PJM East region.
 
@@ -31,7 +31,7 @@ The dataset used is `PJME_hourly.csv`, which is located in the root directory of
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 To run this project locally, please follow these steps. It is recommended to use a virtual environment to manage dependencies.
 
@@ -66,7 +66,7 @@ To run this project locally, please follow these steps. It is recommended to use
 
 ---
 
-## 📘 Usage Guide
+## Usage Guide
 
 This project is contained entirely within the `Time series forecast with XGB.ipynb` Jupyter Notebook. It is not a command-line application. To use it, simply run the cells in the notebook from top to bottom.
 
@@ -83,7 +83,7 @@ The notebook is structured as follows:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 The repository is structured to be simple and easy to navigate.
 
@@ -104,7 +104,7 @@ Time-series-forecast-with-XGB/
 
 ---
 
-## 📈 Methodology
+## Methodology
 
 ### Time-Series Forecasting Approach
 The project models the time-series forecasting problem as a standard regression task. Instead of using traditional time-series models (like ARIMA or SARIMA), we create features from the timestamp itself. This allows us to use powerful regression models like XGBoost, which can capture complex non-linear relationships between the time features and the target variable (energy consumption).
@@ -120,7 +120,7 @@ The model's performance is evaluated using **Root Mean Squared Error (RMSE)**, w
 
 ---
 
-## 📊 Visualizations
+## Visualizations
 
 The notebook generates several key visualizations to aid in analysis and evaluation:
 
@@ -133,7 +133,7 @@ The notebook generates several key visualizations to aid in analysis and evaluat
 
 ---
 
-## 🔧 Development Notes
+## Development Notes
 
 *   **Environment:** The analysis was performed using Python 3 and the libraries listed in `requirements.txt`.
 *   **Reproducibility:** To reproduce the results, ensure you follow the Installation & Setup instructions and run the notebook cells sequentially. The model's performance may vary slightly due to the stochastic nature of some algorithms, but the overall conclusions should remain the same.
@@ -141,13 +141,13 @@ The notebook generates several key visualizations to aid in analysis and evaluat
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 This project focuses on the analysis and forecasting process within the Jupyter Notebook. No deployment pipeline or model-serving mechanism is included. The trained model is not saved to a file, but the notebook provides the code to train it from scratch.
 
 ---
 
-## 🛠 Troubleshooting
+## Troubleshooting
 
 *   **Kernel Not Found/Showing in Jupyter:** If your `venv` kernel does not appear in the notebook, you may need to register it with Jupyter:
     ```bash
@@ -160,13 +160,13 @@ This project focuses on the analysis and forecasting process within the Jupyter 
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
-## 📞 Contact
+## Contact
 
 This project was created by **Azeez Akintonde**.
 
